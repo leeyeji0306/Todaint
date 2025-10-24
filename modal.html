@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+</head>
+
+<body>
+    <form action="calendar.html">
+        <div class="screen">
+            <div class="view">  </div>
+            <input type="date" class="date">
+            <div class="div">기록하기</div>
+            <div class="view-2">
+                <select name="weather" id="weather">
+                    <option value="sunny" selected>맑음</option>
+                    <option value="rainny">비</option>
+                    <option value="cloudy">흐림</option>
+                    <option value="snowy">눈</option>
+                </select>
+            </div>
+            <div class="vector-wrapper"></div>
+            <img class="image" src=".\mdi_map-marker.png" />
+            <div class="text-wrapper-2">컬러</div>
+            <div class="text-wrapper-3">날씨</div>
+            <button type="submit" id="submit">작성 완료</button>
+
+            <div class="group-wrapper">
+                <div class="group">
+                    <img class="img" src=".\Mask group.png" /> <img class="vector-2" src="img/vector.svg" />
+                </div>
+            </div>
+            <a href="calendar.html"><img class="x" src="x.png" /></a>
+            <div class="view-4">
+                <div class="frame">
+                    <div class="mdi-map-marker"><img class="vector-3" src="vector-7.png" /></div>
+                    <div class="text-wrapper-5">출발</div>
+                </div>
+                <input type="text" class="rectangle">
+            </div>
+            <div class="view-5">
+                <div class="frame">
+                    <div class="mdi-map-marker"><img class="vector-3" src="vector-7.png" /></div>
+                    <div class="text-wrapper-5">도착</div>
+                </div>
+                <input type="text" class="rectangle">
+            </div>
+            <div class="view-6">
+                <div class="frame-2">
+                    <img class="mask-group" src="mask-group.png" />
+                    <div class="text-wrapper-5">산책시간</div>
+                </div>
+                <div class="time">
+                    <div class="timeDiv">
+                        <input type="number" id="hour">
+                        <label for="hour">H</label>
+                        <span>:</span>
+                        <input type="number" id="minute">
+                        <label for="minute">M</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="file" class="uploadImg">
+                <img id="imgEx" src="./imageEx.png" alt="이미지 선택">
+            </div>
+            
+            
+            
+            <input type="textarea" class="memo" placeholder="오늘은 무엇을 보았나요?">
+            <input type="color" class="color">
+            <img class="image-2" src="img/image-2.svg" />
+        </div>
+    </form>
+
+</body>
+
+</html>

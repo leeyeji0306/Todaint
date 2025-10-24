@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  background-color: #f4f6fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+img {
+  padding-bottom: 120px;
+  padding-right: 1600px;
+}
+
+.calendar {
+  width: 1166px;
+  height: 652px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6b00ae;
+  color: white;
+  padding: 15px;
+}
+
+.header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: #eaeaea;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  padding: 30px 40px 40px 40px;
+  gap: 65px;
+}
+
+.days div {
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.days div:hover {
+  background-color: #d3e5ff;
+}
+
+.days .today {
+  background-color: #6b00ae;
+  color: white;
+  font-weight: bold;
+}
